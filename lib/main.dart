@@ -1,26 +1,12 @@
-/*import 'package:flutter/material.dart';
-import 'file:///E:/Flutter%20apps/stocks_app/lib/PAGES/home_page.dart';
 
-void main() {
-  runApp(App());
-}
-class App extends StatelessWidget{
-  @override
-  Widget build(BuildContext context){
-    return MaterialApp(
-        title: "Stocks",
-        home : HomePage()
-    );
-  }
-}*/
 import 'package:flutter/material.dart';
-import 'package:stock_app_profile_page/PAGES/home_page.dart';
-import 'package:stock_app_profile_page/PAGES/profile.dart';
-import 'package:stock_app_profile_page/PAGES/pages.dart';
-import 'package:stock_app_profile_page/PAGES/Image_slider.dart';
-import 'package:stock_app_profile_page/PAGES/detail_page.dart';
-import 'package:stock_app_profile_page/PAGES/login_page.dart';
-import 'package:stock_app_profile_page/PAGES/Portfolio.dart';
+import 'package:live_location_tracker/PAGES/home_page.dart';
+import 'package:live_location_tracker/PAGES/profile.dart';
+import 'package:live_location_tracker/PAGES/pages.dart';
+import 'package:live_location_tracker/PAGES/Image_slider.dart';
+import 'package:live_location_tracker/PAGES/detail_page.dart';
+import 'package:live_location_tracker/PAGES/login_page.dart';
+import 'package:live_location_tracker/PAGES/Portfolio.dart';
 
 void main() {
   runApp(App());
@@ -45,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Stocks App"),backgroundColor: Colors.lightBlue),
+      appBar: AppBar(title: Text("Live Location"),backgroundColor: Colors.lightBlue),
       body: Center(child: _pages[_selectedItem],),
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
